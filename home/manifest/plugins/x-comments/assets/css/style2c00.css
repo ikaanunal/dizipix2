@@ -1,0 +1,534 @@
+.x_comments_wrapper {
+    margin-top: 15px;
+    display: block;
+    clear: both;
+}
+
+.x_comments_fixed_message {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 42px;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.x_comment_global_message {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color: #444;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 12px 12px;
+}
+
+.x_comment_global_message.info {
+    background: #c7eaff !important;
+}
+
+.x_comments,
+.x_comments *,
+.x_comment_form,
+.x_comment_form * {
+    box-sizing: border-box !important;
+}
+
+.x_comments a,
+.x_comment_form a {
+    text-decoration: inherit !important;
+}
+
+.x_comment_report_container {
+    display: none;
+}
+
+.x_comment_form {
+    /*padding: 10px 20px;*/
+    margin-bottom: 20px;
+}
+
+.x_comments {
+    display: block;
+    clear: both;
+    /*padding: 10px 20px;*/
+}
+
+.x_comment_form_report {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.x_comments .x_comment_container {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.x_comments .x_comment_container.x_comment_selected_elemet {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.x_comment_container .x_avatar {
+    float: left;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.x_comment_container .x_avatar .x_avatar_inner {
+    margin-top: 0px;
+}
+
+.x_comment_container .x_avatar .x_avatar_inner img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.x_comment_container .x_comment {
+    float: left;
+    width: calc(100% - 65px);
+}
+
+.x_comment_container .x_comment .x_comment_author {
+    font-weight: bold;
+    display: inline;
+    margin-right: 5px;
+    font-size: 13px;
+    color: #444;
+}
+
+.x_comment_container .x_comment .x_comment_date {
+    display: inline;
+    margin-right: 5px;
+    font-size: 11px;
+    color: #666;
+}
+
+.x_comment_container .x_comment .x_comment_content {
+    font-size: 13px;
+    line-height: 22px;
+    opacity: 0.7;
+    text-align: left;
+    word-break: keep-all;
+}
+
+.x_comment_container .x_comment .x_comment_toggle_content {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.x_comment_container .x_comment .x_comment_toggle_raw {
+    display: none;
+}
+
+.x_comment_container .x_comment .x_comment_buttons {
+    margin-top: 5px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+
+.x_comment_container .x_comment .x_comment_icon_link {
+    padding: 0px 10px;
+    border-radius: 3px;
+    display: block;
+    fill: #444;
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    background: rgba(0, 0, 0, 0.005);
+    margin-right: 3px;
+    text-decoration: none !important;
+    height: 28px;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.x_comment_container .x_comment .x_comment_icon_link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.x_comment_container .x_comment .x_comment_icon_link svg {
+    width: 18px !important;
+    height: 28px !important;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.x_comment_container .x_comment .x_comment_icon_link span {
+    display: block;
+    float: left;
+    color: #888;
+    font-size: 13.5px;
+    line-height: 23px;
+    font-weight: light;
+    margin-top: 3px;
+}
+
+.x_comment_container .x_comment .x_comment_opaque {
+    opacity: 0.3;
+}
+
+.x_comment_container .x_comment .x_comment_text_link {
+    padding: 3.5px 10px;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.005);
+    margin-right: 3px;
+    height: 28px;
+    line-height: 22px;
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.x_comment_container .x_comment .x_comment_spoiler_button {
+    display: none !important;
+}
+
+.x_comment_container .x_comment .x_comment_text_link.active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.x_comment_form_answer {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.x_comment_container .x_comment .x_comment_text_link:not(.active):hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.x_comment_container .x_comment .x_child_comment_toggle {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #444;
+    fill: #444;
+    line-height: 100%;
+}
+
+.x_comment_container .x_comment .x_child_comment_toggle svg {
+    width: 20px !important;
+    height: 13px !important;
+    float: left;
+}
+
+.x_comment_container .x_comment .x_child_comment_toggle span.count {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.x_comment_fixed_message {
+    display: block;
+    clear: both;
+    float: none;
+    font-size: 12px !important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    opacity: 0.4;
+}
+
+.x_comment_buttons_right {
+    float: right;
+}
+
+.x_report_form .x_comment {
+    width: 100%;
+}
+
+.x_comment_form {
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+
+.x_comment_form [name=x_comment_author],
+.x_comment_form [name=x_comment_author_email] {
+    display: none !important;
+}
+
+.x_comment_form .x_messages {
+    font-size: 12px;
+    color: darkred;
+}
+
+.x_comment_form .x_comment_input {
+    border: 0 !important;
+    background: transparent !important;
+    display: block;
+    resize: none;
+    height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 6px 6px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0px !important;
+    border-radius: 0 !important;
+    outline: 0 !important;
+}
+
+.x_comment_form .x_comment_editor {
+    border: 0 !important;
+    background: transparent !important;
+    display: block;
+    resize: none;
+    height: 40px;
+    min-height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 6px 6px;
+    margin: 0px !important;
+    width: 100%;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    outline: 0 !important;
+    color: #fff !important;
+}
+
+.x_comment_form .x_comment_editor:focus,
+.x_comment_form .x_comment_input:focus {
+    border-bottom: 2px solid #444 !important;
+    outline: 0 !important;
+}
+
+.x_comment_form .x_comment_editor.error,
+.x_comment_form .x_comment_input.error {
+    border-bottom: 2px solid darkred !important;
+}
+
+.x_comment_form .x_comment_buttons {
+    display: none !important;
+}
+
+.x_comment_form .x_comment_buttons.active {
+    display: block !important;
+}
+
+.x_comment_reply_container {
+    display: none !important;
+}
+
+.x_comment_clearfix {
+    overflow: auto;
+    display: block;
+    clear: both;
+}
+
+.x_comment_clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.x_comment_seperator {
+    margin: 20px 0px !important;
+}
+
+.x_comment_text_button {
+    padding: 4px 20px;
+    line-height: 24px;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto !important;
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.1) !important;
+    margin-right: 3px;
+    text-decoration: none !important;
+    outline: 0 !important;
+}
+
+.x_comment_text_button.active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.x_comment_text_button:not(.active):hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.x_comments_header {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.x_comments_header .x_comments_count {
+    float: left;
+    font-size: 13px;
+    border-left: 6px solid #444;
+    padding-left: 6px;
+    min-height: 25px;
+    line-height: 25px;
+}
+
+.x_comments_header .x_comments_order_button {
+    float: left;
+    margin-left: 15px;
+    padding: 0px 10px !important;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.1);
+    height: 25px;
+    line-height: 100%;
+    text-decoration: none !important;
+    outline: 0 !important;
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: none !important;
+}
+
+.x_comments_header .x_comments_order_button:focus {
+    outline: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.x_comments_header .x_comments_order_button.active {
+    opacity: 1;
+}
+
+.x_comments_header .x_comments_order_options {
+    display: none;
+}
+
+.x_comment_form {
+    margin: 0;
+}
+
+.x_comments {
+    margin-top: 15px;
+}
+
+.x_comments .x_comment_container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.x_comments_wrapper {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.x_comment_container .x_comment .x_comment_content {
+    padding-top: 5px;
+    line-height: 23px;
+    opacity: 1;
+    font-size: 14px;
+    color: #fbfbfb;
+}
+
+.x_comment_container .x_comment .x_comment_toggle_content {
+    opacity: 1
+}
+
+.x_comment_container .x_comment .x_comment_author {
+    color: #b7b7b7;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.x_avatar_inner text {
+    font-size: 16px !important;
+}
+
+.x_comments_header .x_comments_order_button {
+    color: #fff !important;
+}
+
+.x_comment_container .x_comment .x_child_comment_toggle {
+    color: #ff1919;
+}
+
+.x_comment_container .x_comment .x_comment_text_link {
+    color: #929292;
+}
+
+.x_comment_global_message {
+    color: #fff;
+}
+
+.x_comment_global_message.info {
+    background: #333333 !important;
+}
+
+.x_comments .x_comment_container.x_comment_selected_elemet {
+    border-color: darkred !important;
+}
+
+.x_comment_spoiler_button.active {
+    background: darkred !important;
+    color: #fff !important
+}
+
+.x_comment_content img {
+    max-width: 100%;
+}
+
+.x_comments_order_button span {
+    display: inline-block;
+}
+
+.x_comments_count {
+    display: block;
+}
+
+.x_comment_container div {
+    display: block;
+}
+
+.x_comment_message, .x_comment_date {
+    display: inline-block;
+}
+
+.x_comment_container .x_comment .x_child_comment_toggle span.count {
+    display: inline-block;
+}
